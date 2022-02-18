@@ -86,8 +86,7 @@ class _ScoreHomeState extends State<ScoreHome> {
             mainAxisAlignment:
                 MainAxisAlignment.center, //aligns the buttons horizontally
             children: [
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
                 child: const Text(
                   "Increase",
                   style: TextStyle(
@@ -99,13 +98,15 @@ class _ScoreHomeState extends State<ScoreHome> {
               const SizedBox(
                 width: 25,
               ),
-              RaisedButton(
-                color: Colors.red,
+              ElevatedButton(
                 child: const Text(
                   "Decrease",
                   style: TextStyle(
                       color: Colors.white,
                   fontSize: 18),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red.shade800
                 ),
                 onPressed: decreaseNumber,
               ),
